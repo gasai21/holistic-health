@@ -301,6 +301,43 @@ footer .footer-container .list-menu ul li a{
 }
 /* END FOOTER */
 
+/* START ASIDE */
+
+main{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+main .content{
+    flex: 1;
+}
+
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+    margin-top: 85vh;
+    margin-right: 10px;
+}
+
+main aside .button-wa{
+    background-color: #29AD17;
+    max-width: 4rem;
+    max-height: 4rem;
+    border-radius: 100px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main aside .button-wa img{
+    width: 100%;
+}
+/* END ASIDE */
+
 @media screen and (max-width:768px) {
     
     header .nav-container .logo{
@@ -309,7 +346,7 @@ footer .footer-container .list-menu ul li a{
 
     header .beranda{
         background-repeat: no-repeat;
-        
+        height: 350px;
     }
 
     header .beranda h1{
@@ -362,6 +399,11 @@ footer .footer-container .list-menu ul li a{
 
     footer .footer-container{
         flex-direction: column;
+    }
+
+    main aside .button-wa{
+        max-width: 3rem;
+        max-height: 3rem;
     }
 
   }
